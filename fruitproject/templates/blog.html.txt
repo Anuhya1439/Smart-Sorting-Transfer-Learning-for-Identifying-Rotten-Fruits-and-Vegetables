@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Predict - NutriGaze</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    nav { background-color: #333; color: white; padding: 10px 0; text-align: right; }
-    nav a { color: white; padding: 14px 16px; text-decoration: none; font-weight: bold; }
-    nav a:hover { background-color: #575757; }
-    .container { padding: 40px; text-align: center; }
-    .btn { padding: 12px 24px; background: green; color: white; border: none; border-radius: 5px; cursor: pointer; }
-  </style>
+  <meta charset="UTF-8">
+  <title>Contact | NutriGaze</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <nav>
-    <span style="float: left; padding-left: 20px;">NUTRIGAZE</span>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/predict-page">Predict</a>
-    <a href="/contact">Contact</a>
-  </nav>
+  <div class="navbar">
+    <div><strong>NUTRIGAZE</strong></div>
+    <div>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/predict">Predict</a>
+      <a href="/contact" class="active">Contact</a>
+    </div>
+  </div>
 
-  <div class="container">
-    <h2>Image Classification</h2>
-    <form action="/predict" method="POST" enctype="multipart/form-data">
-      <p>Upload Your Image :</p>
-      <input type="file" name="pc_image" required><br><br>
-      <button class="btn" type="submit">predict</button>
-    </form>
+  <div class="main-content">
+    <h2>Diploma Payment Receipt</h2>
+    <table class="receipt">
+      <tr><td>Registration No</td><td>22065-CHOT-012</td></tr>
+      <tr><td>Applicant Name</td><td>CHINTA ANUSKA</td></tr>
+      <tr><td>Gender</td><td>F</td></tr>
+      <tr><td>Mobile Number</td><td>9951346713</td></tr>
+      <tr><td>Are you differently abled (PH)</td><td>No</td></tr>
+      <tr><td>Amount</td><td>₹600.00</td></tr>
+      <tr><td>Payment Ref No</td><td>PTM010354444A2C4</td></tr>
+      <tr><td>Payment Date</td><td>01/03/2025</td></tr>
+    </table>
   </div>
 </body>
 </html>
