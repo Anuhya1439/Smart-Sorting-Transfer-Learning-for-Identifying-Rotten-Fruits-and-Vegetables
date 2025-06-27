@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predict - NutriGaze</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    nav { background-color: #333; color: white; padding: 10px 0; text-align: right; }
+    nav a { color: white; padding: 14px 16px; text-decoration: none; font-weight: bold; }
+    nav a:hover { background-color: #575757; }
+    .container { padding: 40px; text-align: center; }
+    .btn { padding: 12px 24px; background: green; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav>
+    <span style="float: left; padding-left: 20px;">NUTRIGAZE</span>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/predict-page">Predict</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Image Classification</h2>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+      <p>Upload Your Image :</p>
+      <input type="file" name="pc_image" required><br><br>
+      <button class="btn" type="submit">predict</button>
+    </form>
+  </div>
+</body>
+</html>
